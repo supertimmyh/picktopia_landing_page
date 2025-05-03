@@ -1,0 +1,122 @@
+Below is a set of example prompts you can feed into Trae IDE to guide it toward generating a website that closely mimics the reference screenshot (the CityPickle site). You can mix and match or modify them as needed. They’re organized in a logical sequence—starting with a basic layout, then layering on features, styling, and final touches.
+
+---
+
+### 1. Basic Project Setup & Structure
+
+**Prompt**  
+“Create a new website project (using HTML, CSS, and JavaScript OR a React framework—your choice) that includes:  
+- A navigation bar at the top.  
+- A large hero section with a headline reading ‘The New Generation of Pickleball.’  
+- Three distinct color-block sections below the hero.  
+- A footer at the bottom.  
+Structure it so I can easily add additional sections later. Include responsive design best practices.”
+
+---
+
+### 2. Hero Section Design
+
+**Prompt**  
+“In the hero section, replicate the style from the provided screenshot. Use a large background image or gradient, and overlay text that reads ‘The New Generation of Pickleball.’  
+- Make sure the text is centered and clearly visible.  
+- Include subtle floating green pickleball elements (use either CSS animations or a JS library for floating effects).  
+- Provide a button or call-to-action link below the main heading.”
+
+---
+
+### 3. Color-Blocked Feature Sections
+
+**Prompt**  
+“Below the hero section, create three horizontal color-blocked sections, each with a heading and a short description:  
+1. **Play** (Describe the club’s focus on fun and exercise)  
+2. **Recreation** (Highlight pickleball as a social sport)  
+3. **Community** (Emphasize the community aspect and events)  
+
+Use bright, contrasting background colors for each section, similar to the screenshot. Make them responsive so they stack vertically on mobile.”
+
+---
+
+### 4. Promotional Offer Section
+
+**Prompt**  
+“Add a promotional offer section:  
+- Header text: ‘Get 50% Off Your First Booking at Long Island City Club’  
+- A call-to-action button labeled ‘Claim Offer’  
+- Make this a separate color-block section, matching the style in the screenshot.  
+- Ensure it’s placed directly beneath the three feature sections.”
+
+---
+
+### 5. CityPickle Kids Section
+
+**Prompt**  
+“Create a ‘CityPickle Kids’ section, similar to the screenshot:  
+- Include an image or illustration of kids playing pickleball.  
+- Briefly describe the kids’ program.  
+- Add a button or link to learn more about kids’ classes.  
+- Style it with a playful color scheme, distinct from the other sections.”
+
+---
+
+### 6. Gift Card Section
+
+**Prompt**  
+“Add a section titled ‘Give the Gift of Pickleball’ or ‘Give the Gift of Play.’  
+- Include a short description of the gift card benefits.  
+- Add a call-to-action button that leads to a hypothetical ‘Purchase Gift Card’ page.  
+- Use a design consistent with the rest of the site, referencing the screenshot for color cues.”
+
+---
+
+### 7. Private Events Section
+
+**Prompt**  
+“Create a ‘Private Events’ section:  
+- Include a heading like ‘Private Events’ or ‘Book Your Next Event.’  
+- Add a short paragraph explaining how to reserve the club for corporate events, birthday parties, etc.  
+- Use a background color or image that complements the rest of the site.  
+- Place a ‘Learn More’ or ‘Book Now’ button.”
+
+---
+
+### 8. Footer & Legal
+
+**Prompt**  
+“Build a footer that spans the full width of the page and includes:  
+- Links for social media (placeholder icons).  
+- Contact info (email, phone, or address).  
+- Copyright notice.  
+- Optional disclaimers or terms of service link.  
+Style it in a way that’s cohesive with the overall design. Make sure it remains visible and well-formatted on mobile devices.”
+
+---
+
+### 9. Navigation & Responsiveness
+
+**Prompt**  
+“Enhance the navigation bar:  
+- Include a logo on the left and menu items (e.g., Home, Book Now, Kids, Events) on the right.  
+- Make it sticky so it stays visible while scrolling.  
+- Implement a mobile-responsive menu (hamburger icon) that toggles open on small screens.  
+- Provide me with the final HTML/CSS/JS (or React component code) for this nav bar.”
+
+---
+
+### 10. Final Polishing & Cleanup
+
+**Prompt**  
+“Review the entire site structure for consistency and responsiveness.  
+- Check spacing, typography, and alignment.  
+- Ensure that all buttons and links have hover/focus states.  
+- Add basic SEO best practices (title tags, meta descriptions).  
+- Provide the final codebase with comments explaining each major section.”
+
+---
+
+## Tips for Working with Trae IDE
+
+1. **Reference the Screenshot**: Remind Trae in each prompt that you have a screenshot reference, so it understands the layout and color scheme you’re aiming for.
+2. **Iterative Approach**: Break down your requests step by step (as shown above). After each step, ask Trae to refine or modify until it matches your vision.
+3. **Ask for Explanations**: If you need clarity on the generated code, add a follow-up prompt: “Explain how each part of the code works and how I can modify it.”
+
+Using these prompts should help you systematically guide Trae IDE to generate a website closely mimicking the CityPickle screenshot while customizing it to your own pickleball club’s needs. Good luck with your project!

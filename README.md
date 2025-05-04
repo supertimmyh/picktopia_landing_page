@@ -36,3 +36,12 @@ This will start the development server, typically at `http://localhost:5173`.
 ## Status
 
 This landing page is a temporary solution. The official Picktopia Pickleball Club website is currently in development and will replace this page upon completion.
+
+
+echo "# picktopia_landing_page" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:supertimmyh/picktopia_landing_page.git
+git push -u origin main

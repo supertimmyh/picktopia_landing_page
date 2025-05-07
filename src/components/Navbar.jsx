@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { useState } from 'react';
-import logo from '../assets/logo.svg';
+import logo from '../assets/PICKTOPIA.svg';
 
 const Nav = styled.nav`
   background-color: #ff7f50;
@@ -104,7 +104,7 @@ const LogoContainer = styled.div`
 `;
 
 const LogoImage = styled.img`
-  height: 60px;
+  height: 90px;
   width: auto;
   margin-right: 0.5rem;
 `;
@@ -166,7 +166,7 @@ const Navbar = () => {
     <Nav>
       <NavContainer>
         <LogoContainer>
-          <LogoImage src={logo} alt="Picktopia Logo" />
+          <LogoImage src={logo} alt="PICKTOPIA Logo" />
           <Logo>Picktopia Pickleball Club</Logo>
         </LogoContainer>
         <HamburgerButton onClick={toggleMenu}>
@@ -174,9 +174,7 @@ const Navbar = () => {
         </HamburgerButton>
         <NavLinks isOpen={isOpen}>
           <NavLink href="/">Home</NavLink>
-          <NavLink href="#kids">Kids</NavLink>
-          <NavLink href="#events">Events</NavLink>
-          <BookNowButton href="/signup">Book Now</BookNowButton>
+          <BookNowButton href="/signup">Join Now</BookNowButton>
         </NavLinks>
       </NavContainer>
     </Nav>

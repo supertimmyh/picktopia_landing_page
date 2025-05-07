@@ -131,21 +131,20 @@ const SignUp = () => {
 
           <InputGroup>
             <Label htmlFor="email">Email Address</Label>
-            <Input type="email" id="email" required />
+            <Input type="email" id="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address." />
           </InputGroup>
 
           <InputGroup>
             <Label htmlFor="phone">Phone Number</Label>
-            <Input type="tel" id="phone" required />
+            <Input type="tel" id="phone" required pattern="^[0-9]{10}$" title="Please enter a 10-digit phone number." />
           </InputGroup>
 
           <InputGroup>
             <Label htmlFor="membership">Membership Type</Label>
             <Select id="membership" required>
               <option value="">Select a membership type</option>
-              <option value="basic">Basic Membership</option>
-              <option value="premium">Premium Membership</option>
-              <option value="family">Family Membership</option>
+              <option value="prime">Prime Membership</option>
+              <option value="fee">Fee Membership</option>
             </Select>
           </InputGroup>
 

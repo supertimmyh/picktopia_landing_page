@@ -126,8 +126,8 @@ const Hero = () => {
       />
       <HeroSection>
         <HeroContent>
-          <Title>The New Generation of Pickleball</Title>
-          <Subtitle>Experience the future of the fastest growing sport</Subtitle>
+          <Subtitle>Pickleball Fun for Everyone - Join the Rally at</Subtitle>
+          <Title>Picktopia Pickleball Club</Title>
           <CTAButton to="/signup">Join Now</CTAButton>
         </HeroContent>
       </HeroSection>

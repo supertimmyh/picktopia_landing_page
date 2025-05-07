@@ -48,6 +48,7 @@ const CTAButton = styled.a`
   letter-spacing: 1px;
   transition: all 0.3s ease;
   border: 2px solid white;
+  margin-top: 2rem; /* Added top margin */
 
   &:hover {
     background-color: transparent;
@@ -55,12 +56,29 @@ const CTAButton = styled.a`
   }
 `;
 
-const PromotionalOffer = () => {
+const PromotionalOffer = ({ monthlyPrice, primeTimePrice, startDate, endDate }) => {
+  // The Grand Opening Special details have been moved to GrandOpening.jsx
+  // This component can be repurposed or removed if no other promotional offers are planned.
+  // For now, let's return null or a placeholder if it's still rendered in App.jsx
+  // Or, if there are other offers, this component would be structured to handle them.
+
+  // Example: Rendering nothing if this specific offer was its only purpose.
+  // If other offers are intended, this logic would need to be different.
+  if (monthlyPrice === 29.99 && primeTimePrice === 1.99 && startDate === "June 2023" && endDate === "August 2023") {
+    return null; // Or a generic message if preferred
+  }
+
+  // Placeholder for other potential offers, or this can be removed if not needed.
   return (
     <OfferSection>
       <Container>
-        <Header>Get 50% Off Your First Booking at Our Clubs</Header>
-        <CTAButton href="#claim-offer">Claim Offer</CTAButton>
+        <Header>Special Offers</Header>
+        <p>Stay tuned for exciting promotions!</p>
+        {/* <p>From {startDate} to {endDate}:</p>
+        <p>Membership: ${monthlyPrice}/month</p>
+        <p>Prime Time Play: ${primeTimePrice}/person</p>
+        <p>Non-Prime Time: Free for members</p>
+        <CTAButton href="#claim-offer">Learn More</CTAButton> */}
       </Container>
     </OfferSection>
   );

@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import heroImage from '../assets/hero-image.jpeg';
 
 const SignUpSection = styled.section`
@@ -40,6 +42,7 @@ const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  position: relative;
 `;
 
 const InputGroup = styled.div`
@@ -114,9 +117,31 @@ const SubmitButton = styled.button`
 `;
 
 const SignUp = () => {
-  const handleSubmit = (e) => {
+  const [status, setStatus] = useState('');
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission here
+    const form = e.target;
+    try {
+      const response = await fetch('https://formspree.io/f/mqaqbnkw', {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+          Accept: 'application/json'
+        }
+      });
+      
+      if (response.ok) {
+        form.reset();
+        setStatus('success');
+        navigate('/signup/success');
+      } else {
+        setStatus('error');
+      }
+    } catch {
+      setStatus('error');
+    }
   };
 
   return (
@@ -126,22 +151,22 @@ const SignUp = () => {
         <Form onSubmit={handleSubmit}>
           <InputGroup>
             <Label htmlFor="name">Full Name</Label>
-            <Input type="text" id="name" required />
+            <Input type="text" id="name" name="name" required />
           </InputGroup>
 
           <InputGroup>
             <Label htmlFor="email">Email Address</Label>
-            <Input type="email" id="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address." />
+            <Input type="email" id="email" name="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address." />
           </InputGroup>
 
           <InputGroup>
             <Label htmlFor="phone">Phone Number</Label>
-            <Input type="tel" id="phone" required pattern="^[0-9]{10}$" title="Please enter a 10-digit phone number." />
+            <Input type="tel" id="phone" name="phone" required pattern="^[0-9]{10}$" title="Please enter a 10-digit phone number." />
           </InputGroup>
 
           <InputGroup>
             <Label htmlFor="membership">Membership Type</Label>
-            <Select id="membership" required>
+            <Select id="membership" name="membership" required>
               <option value="">Select a membership type</option>
               <option value="prime">Prime Membership</option>
               <option value="fee">Fee Membership</option>
@@ -150,7 +175,7 @@ const SignUp = () => {
 
           <InputGroup>
             <Label htmlFor="experience">Pickleball Experience</Label>
-            <Select id="experience" required>
+            <Select id="experience" name="experience" required>
               <option value="">Select your experience level</option>
               <option value="beginner">Beginner</option>
               <option value="intermediate">Intermediate</option>
@@ -158,7 +183,19 @@ const SignUp = () => {
             </Select>
           </InputGroup>
 
-          <SubmitButton type="submit">Sign Up Now</SubmitButton>
+          <SubmitButton type="submit" disabled={status === 'submitting'}>
+            {status === 'submitting' ? 'Sending...' : 'Sign Up Now'}
+          </SubmitButton>
+          {status === 'success' && (
+            <p style={{ color: '#4CAF50', textAlign: 'center', marginTop: '1rem' }}>
+              Thanks for signing up! We'll be in touch soon.
+            </p>
+          )}
+          {status === 'error' && (
+            <p style={{ color: '#ff0000', textAlign: 'center', marginTop: '1rem' }}>
+              Oops! There was a problem submitting your form.
+            </p>
+          )}
         </Form>
       </Container>
     </SignUpSection>

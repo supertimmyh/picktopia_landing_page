@@ -10,6 +10,7 @@ import Hero from './components/Hero'
 import GrandOpening from './components/GrandOpening'; // Import the new component
 import Footer from './components/Footer'
 import SignUp from './components/SignUp'
+import SignUpSuccess from './components/SignUpSuccess'
 import './App.css'
 
 const AppWrapper = styled.div`
@@ -35,6 +36,7 @@ function App() {
             </>
           } />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/signup/success" element={<SignUpSuccess />} />
         </Routes>
         <Footer />
       </AppWrapper>

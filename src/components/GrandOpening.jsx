@@ -111,10 +111,10 @@ const GrandOpening = () => {
 
         <OfferDetailsContainer>
           <OfferHeader>🌟 Grand Opening Special! 🌟</OfferHeader>
-          <OfferText>From <strong>June 2023</strong> to <strong>August 2023</strong>, enjoy exclusive rates:</OfferText>
+          <OfferText>From <strong>June 2025</strong> to <strong>August 2025</strong>, enjoy exclusive rates:</OfferText>
           <OfferText>✓ Membership: <PriceHighlight>$29.99/month</PriceHighlight></OfferText>
-          <OfferText>✓ Prime Time Play: <PriceHighlight>$2.99/person</PriceHighlight></OfferText>
-          <OfferText>✓ Non-Prime Time Play: <PriceHighlight>Free for members!</PriceHighlight></OfferText>
+          <OfferText>✓ Prime Time Open Play: <PriceHighlight>$2.99/person</PriceHighlight></OfferText>
+          <OfferText>✓ Non-Prime Time Open Play: <PriceHighlight>Free for members!</PriceHighlight></OfferText>
           <CTAButton href="#claim-offer">Claim Your Offer Now</CTAButton>
         </OfferDetailsContainer>
         {/* Add more content or CTAs if needed */}

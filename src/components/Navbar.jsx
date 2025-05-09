@@ -15,10 +15,25 @@ const Nav = styled.nav`
   justify-content: center;
 `;
 
-const Logo = styled.h1`
-  font-size: 1.5rem;
+const Logo = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+`;
+
+const Pickleball = styled.span`
+  color: #042944;
+  display: block;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: bold;
+`;
+
+const Club = styled.span`
   color: white;
-  margin: 0;
+  display: block;
+  font-size: 2rem;
+  line-height: 1.2;
   font-weight: bold;
 `;
 
@@ -167,7 +182,10 @@ const Navbar = () => {
       <NavContainer>
         <LogoContainer>
           <LogoImage src={logo} alt="PICKTOPIA Logo" />
-          <Logo>Picktopia Pickleball Club</Logo>
+          <Logo>
+            <Pickleball>Pickleball</Pickleball>
+            <Club>Club</Club>
+          </Logo>
         </LogoContainer>
         <HamburgerButton onClick={toggleMenu}>
           <HamburgerIcon isOpen={isOpen} />

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
+import HeroSection from './components/HeroSection'; // Changed to HeroSection
 // import Features from './components/Features'
 // import KidsSection from './components/KidsSection'
 // import GiftCardSection from './components/GiftCardSection'
@@ -26,7 +26,7 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
-              <Hero />
+              <HeroSection />
               <GrandOpening />
               {/* <PromotionalOffer /> */}
               {/* <Features />

@@ -99,6 +99,19 @@ const Footer = () => {
             <div>Toronto, ON M1K 1L8</div>
           </ContactInfo>
         </Column>
+
+        <Column>
+          <Title>Hours of Operation</Title>
+          <ContactInfo>
+            <div>Monday: 8:00 am – 10:00 pm</div>
+            <div>Tuesday: 8:00 am – 10:00 pm</div>
+            <div>Wednesday: 8:00 am – 10:00 pm</div>
+            <div>Thursday: 8:00 am – 10:00 pm</div>
+            <div>Friday: 8:00 am – 11:00 pm</div>
+            <div>Saturday: 8:00 am – 11:00 pm</div>
+            <div>Sunday: 8:00 am – 10:00 pm</div>
+          </ContactInfo>
+        </Column>
         
         <Column>
           <Title>Legal</Title>

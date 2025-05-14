@@ -266,7 +266,7 @@ const GrandOpening = () => {
               <BenefitList>
                 <BenefitItem>Unlimited open play sessions</BenefitItem>
                 <BenefitItem>Unlimited court bookings during non-prime hours</BenefitItem>
-                <BenefitItem>Up to 3 prime-time bookings/week</BenefitItem>
+                <BenefitItem>Up to 2 free prime-time bookings/week</BenefitItem>
                 <BenefitItem>Championship court surcharge: $10/hr (prime only)</BenefitItem>
                 <BenefitItem>10% off clinics, training, and merch</BenefitItem>
                 <BenefitItem>4 guest passes per month</BenefitItem>
@@ -302,16 +302,16 @@ const GrandOpening = () => {
             
             <TimeRow>
               <TimeLabel>Prime Time:</TimeLabel>
-              <TimeValue>Weekdays: 5 PM – 12 AM<br />Weekends: 9 AM – 5 PM</TimeValue>
+              <TimeValue>Weekdays: 5 PM – 10 PM<br />Weekends: 9 AM – 11 PM</TimeValue>
             </TimeRow>
             
             <TimeRow>
               <TimeLabel>Non-Prime Time:</TimeLabel>
-              <TimeValue>Weekdays: 7 AM – 5 PM<br />Weekends: 5 PM – 12 AM</TimeValue>
+              <TimeValue>Weekdays: 8 AM – 4 PM</TimeValue>
             </TimeRow>
           </TimeDefinition>
           
-          <OfferHeader style={{ marginTop: '2rem' }}>🏓 Regular Season Open Play Pricing</OfferHeader>
+          <OfferHeader style={{ marginTop: '2rem' }}> Regular Season Open Play Pricing</OfferHeader>
           <OfferText>After September 1, 2025</OfferText>
           
           <PricingTable>
@@ -327,13 +327,13 @@ const GrandOpening = () => {
             
             <PricingRow>
               <PricingCell>Prime</PricingCell>
-              <PricingCell><PriceHighlight>$8</PriceHighlight></PricingCell>
+              <PricingCell><PriceHighlight>$7</PriceHighlight></PricingCell>
             </PricingRow>
           </PricingTable>
           
           <OfferText style={{ marginTop: '1rem' }}>💡 These rates apply to all non-members or players without a pass.</OfferText>
           
-          <OfferHeader style={{ marginTop: '2rem' }}>🏟️ Court Booking Rates</OfferHeader>
+          <OfferHeader style={{ marginTop: '2rem' }}>Court Booking Rates</OfferHeader>
           <OfferText>Standard Model, Non-Pass Holders</OfferText>
           
           <PricingTable>
@@ -345,14 +345,14 @@ const GrandOpening = () => {
             
             <PricingRow>
               <PricingCell>Standard Courts</PricingCell>
+              <PricingCell><PriceHighlight>$30/hr</PriceHighlight></PricingCell>
               <PricingCell><PriceHighlight>$35/hr</PriceHighlight></PricingCell>
-              <PricingCell><PriceHighlight>$40/hr</PriceHighlight></PricingCell>
             </PricingRow>
             
             <PricingRow>
               <PricingCell>Championship Courts</PricingCell>
-              <PricingCell><PriceHighlight>$45/hr</PriceHighlight></PricingCell>
-              <PricingCell><PriceHighlight>$50/hr</PriceHighlight></PricingCell>
+              <PricingCell><PriceHighlight>$37/hr</PriceHighlight></PricingCell>
+              <PricingCell><PriceHighlight>$42/hr</PriceHighlight></PricingCell>
             </PricingRow>
           </PricingTable>
           

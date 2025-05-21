@@ -103,11 +103,11 @@ const Footer = () => {
         <Column>
           <Title>Hours of Operation</Title>
           <ContactInfo>
-            <div>Monday: 8:00 am – 10:00 pm</div>
-            <div>Tuesday: 8:00 am – 10:00 pm</div>
-            <div>Wednesday: 8:00 am – 10:00 pm</div>
-            <div>Thursday: 8:00 am – 10:00 pm</div>
-            <div>Friday: 8:00 am – 11:00 pm</div>
+            <div>Monday: 9:00 am – 10:00 pm</div>
+            <div>Tuesday: 9:00 am – 10:00 pm</div>
+            <div>Wednesday: 9:00 am – 10:00 pm</div>
+            <div>Thursday: 9:00 am – 10:00 pm</div>
+            <div>Friday: 9:00 am – 11:00 pm</div>
             <div>Saturday: 8:00 am – 11:00 pm</div>
             <div>Sunday: 8:00 am – 10:00 pm</div>
           </ContactInfo>

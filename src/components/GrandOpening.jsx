@@ -250,30 +250,32 @@ const GrandOpening = () => {
         <Header>🎉 Picktopia St Clair — Summer 2025 Launch 🎉</Header>
         <Description>
           Get ready for an incredible summer of pickleball at our brand new St Clair location! 
-          Join us from June 1 to September 1, 2025 with our special launch pricing.
+          Join us from June 1 to August 1, 2025 with our special launch pricing.
         </Description>
 
         <OfferDetailsContainer>
-          <OfferHeader>🌞 GRAND OPENING SPECIAL — SUMMER UNLIMITED PLAY</OfferHeader>
-          <OfferText>June 1 – September 1, 2025</OfferText>
+          <OfferHeader>🌞 GRAND OPENING SPECIAL — SUMMER UNLIMITED PLAY (June 1 – August 1)</OfferHeader>
+          <OfferText>June 1 – August 1, 2025</OfferText>
           
           <PlanContainer>
             <PlanCard featured={true}>
               <PlanTitle featured={true}>🥇 Full Summer Pass</PlanTitle>
-              <PlanPrice>$129</PlanPrice>
+              <PlanPrice>$99</PlanPrice>
               <PlanSubtext>one-time for 3 months</PlanSubtext>
               
               <BenefitList>
-                <BenefitItem>Unlimited open play sessions</BenefitItem>
-                <BenefitItem>Unlimited court bookings during non-prime hours</BenefitItem>
-                <BenefitItem>Up to 2 free prime-time bookings/week</BenefitItem>
-                <BenefitItem>Championship court surcharge: $10/hr (prime only)</BenefitItem>
-                <BenefitItem>10% off clinics, training, and merch</BenefitItem>
-                <BenefitItem>4 guest passes per month</BenefitItem>
-                <BenefitItem>Priority access to Fall/Winter Full Membership</BenefitItem>
+                <BenefitItem>4 free open play sessions</BenefitItem>
+                <BenefitItem>1 free non-prime time court booking per month</BenefitItem>
+                <BenefitItem>1 free prime time court bookings per month</BenefitItem>
+                <BenefitItem>15% Off All Bookings</BenefitItem>
+                <BenefitItem>10 days advanced booking</BenefitItem>
+                <BenefitItem>Unlimited court bookings</BenefitItem>
+                <BenefitItem>10% off clinics, training, and merchandise</BenefitItem>
+                <BenefitItem>2 guest passes per month (or discount on court booking fee)</BenefitItem>
+                <BenefitItem>Priority access to Fall/Winter Full Membership (indoor season is high demand)</BenefitItem>
               </BenefitList>
               
-              <OfferText><strong>🔥 Best value</strong> — equivalent to just $43/month for full indoor access all summer!</OfferText>
+              <OfferText><strong>🔥 Best value</strong> — equivalent to just $33/month for full indoor access all summer!</OfferText>
               <ButtonContainer>
                 <CTAButton href="#claim-offer">GET FULL SUMMER PASS</CTAButton>
               </ButtonContainer>
@@ -281,16 +283,23 @@ const GrandOpening = () => {
             
             <PlanCard>
               <PlanTitle>💡 Monthly Unlimited Play</PlanTitle>
-              <PlanPrice>$49</PlanPrice>
+              <PlanPrice>$39</PlanPrice>
               <PlanSubtext>per month</PlanSubtext>
               
               <BenefitList>
-                <BenefitItem>Same access as the Full Summer Pass</BenefitItem>
-                <BenefitItem>2 guest passes per month</BenefitItem>
-                <BenefitItem>Option to upgrade to Full Summer Pass for $80</BenefitItem>
+              <BenefitItem>4 free open play sessions</BenefitItem>
+                <BenefitItem>1 free non-prime time court booking per month</BenefitItem>
+                <BenefitItem>1 free prime time court bookings per month</BenefitItem>
+                <BenefitItem>15% Off All Bookings</BenefitItem>
+                <BenefitItem>10 days advanced booking</BenefitItem>
+                <BenefitItem>Unlimited court bookings</BenefitItem>
+                <BenefitItem>10% off clinics, training, and merchandise</BenefitItem>
+                <BenefitItem>2 guest passes per month (or discount on court booking fee)</BenefitItem>
+                <BenefitItem>Priority access to Fall/Winter Full Membership (indoor season is high demand)</BenefitItem>
               </BenefitList>
-              
-              <OfferText>Must upgrade within 18 days of plan start to gain all Full Summer Pass benefits retroactively</OfferText>
+
+              <OfferText>Option to upgrade to Full Summer Pass for $70</OfferText>
+              <OfferText>Must upgrade within two week of plan start to gain all Full Summer Pass benefits retroactively</OfferText>
               <ButtonContainer>
                 <CTAButton href="#claim-offer">GET MONTHLY PASS</CTAButton>
               </ButtonContainer>
@@ -302,17 +311,17 @@ const GrandOpening = () => {
             
             <TimeRow>
               <TimeLabel>Prime Time:</TimeLabel>
-              <TimeValue>Weekdays: 5 PM – 10 PM<br />Weekends: 9 AM – 11 PM</TimeValue>
+              <TimeValue>Monday, Tuesday, Wednesday, Thursday: 5 PM – 10 PM<br />Friday: 5 PM - 11 PM<br />Weekend</TimeValue>
             </TimeRow>
             
             <TimeRow>
               <TimeLabel>Non-Prime Time:</TimeLabel>
-              <TimeValue>Weekdays: 8 AM – 4 PM</TimeValue>
+              <TimeValue>Monday, Tuesday, Wednesday, Thursday, Friday: 9 AM – 4 PM</TimeValue>
             </TimeRow>
           </TimeDefinition>
           
-          <OfferHeader style={{ marginTop: '2rem' }}> Regular Season Open Play Pricing</OfferHeader>
-          <OfferText>After September 1, 2025</OfferText>
+          <OfferHeader style={{ marginTop: '2rem' }}>Regular Season Open Play Pricing (After August 31)</OfferHeader>
+          <OfferText>After August 31</OfferText>
           
           <PricingTable>
             <PricingHeader>
@@ -322,19 +331,18 @@ const GrandOpening = () => {
             
             <PricingRow>
               <PricingCell>Non-Prime</PricingCell>
-              <PricingCell><PriceHighlight>$5</PriceHighlight></PricingCell>
+              <PricingCell><PriceHighlight>$7</PriceHighlight></PricingCell>
             </PricingRow>
             
             <PricingRow>
               <PricingCell>Prime</PricingCell>
-              <PricingCell><PriceHighlight>$7</PriceHighlight></PricingCell>
+              <PricingCell><PriceHighlight>$10</PriceHighlight></PricingCell>
             </PricingRow>
           </PricingTable>
           
-          <OfferText style={{ marginTop: '1rem' }}>💡 These rates apply to all non-members or players without a pass.</OfferText>
+          <OfferText style={{ marginTop: '1rem' }}>💡 These rates apply to all players without a pass.</OfferText>
           
-          <OfferHeader style={{ marginTop: '2rem' }}>Court Booking Rates</OfferHeader>
-          <OfferText>Standard Model, Non-Pass Holders</OfferText>
+          <OfferHeader style={{ marginTop: '2rem' }}>Court Booking Rates (Standard Model, Non-Pass Holders)</OfferHeader>
           
           <PricingTable>
             <PricingHeader>
@@ -351,8 +359,8 @@ const GrandOpening = () => {
             
             <PricingRow>
               <PricingCell>Championship Courts</PricingCell>
-              <PricingCell><PriceHighlight>$37/hr</PriceHighlight></PricingCell>
-              <PricingCell><PriceHighlight>$42/hr</PriceHighlight></PricingCell>
+              <PricingCell><PriceHighlight>$35/hr</PriceHighlight></PricingCell>
+              <PricingCell><PriceHighlight>$40/hr</PriceHighlight></PricingCell>
             </PricingRow>
           </PricingTable>
           

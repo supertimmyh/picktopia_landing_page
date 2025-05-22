@@ -169,7 +169,7 @@ const SignUp = () => {
             <Select id="membership" name="membership" required>
               <option value="">Select a membership type</option>
               <option value="prime">Prime Membership</option>
-              <option value="fee">Fee Membership</option>
+              <option value="fee">Community Membership</option>
             </Select>
           </InputGroup>
 

@@ -250,12 +250,12 @@ const GrandOpening = () => {
         <Header>🎉 Picktopia St Clair — Summer 2025 Launch 🎉</Header>
         <Description>
           Get ready for an incredible summer of pickleball at our brand new St Clair location! 
-          Join us from June 1 to August 1, 2025 with our special launch pricing.
+          Join us from June 1 to August 31, 2025 with our special launch pricing.
         </Description>
 
         <OfferDetailsContainer>
-          <OfferHeader>🌞 GRAND OPENING SPECIAL — SUMMER UNLIMITED PLAY (June 1 – August 1)</OfferHeader>
-          <OfferText>June 1 – August 1, 2025</OfferText>
+          <OfferHeader>🌞 GRAND OPENING SPECIAL — SUMMER UNLIMITED PLAY (June 1 – August 31)</OfferHeader>
+          <OfferText>June 1 – August 31, 2025</OfferText>
           
           <PlanContainer>
             <PlanCard featured={true}>

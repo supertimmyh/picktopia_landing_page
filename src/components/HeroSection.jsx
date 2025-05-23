@@ -14,9 +14,8 @@ const HeroContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 70vh; // Adjust height as needed
-  padding: 2rem;
+  justify-content: center;  min-height: 70vh; // Adjust height as needed
+  padding: 5rem 2rem 2rem; // Adjusted top padding for thinner navbar
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
               url(${heroImage}); // Use heroImage as background
   background-size: cover;
@@ -50,7 +49,7 @@ const ClubName = styled.h2`
 `;
 
 const MainHeadline = styled.h1`
-  font-size: 4rem; // Adjusted size
+  font-size: 3rem; // Adjusted size
   font-weight: bold;
   color: #ffffff; // White color
   margin-bottom: 1rem;
@@ -143,8 +142,8 @@ const HeroSection = () => {
 
       <TextWrapper>
         <ClubName>PICKTOPIA PICKLEBALL CLUB</ClubName>
-        <MainHeadline>PICKLEBALL FUN FOR EVERYONE</MainHeadline>
-        <SubHeadline to="/signup">JOIN THE RALLY!</SubHeadline>
+        <MainHeadline>PICKLEBALL FUN FOR EVERYONE - JOIN THE RALLY</MainHeadline>
+        <SubHeadline to="/signup">SIGN UP NOW</SubHeadline>
       </TextWrapper>
     </HeroContainer>
   );

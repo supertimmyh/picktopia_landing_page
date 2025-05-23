@@ -4,7 +4,7 @@ import logo from '../assets/PICKTOPIA.svg';
 
 const Nav = styled.nav`
   background-color: #ff7f50;
-  padding: 1rem 0;
+  padding: 0.5rem 0; // Reduced padding
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100vw;
@@ -24,7 +24,7 @@ const Logo = styled.div`
 const Pickleball = styled.span`
   color: #042944;
   display: block;
-  font-size: 2rem;
+  font-size: 2rem; // Adjusted for less thick navbar on desktop
   line-height: 1.2;
   font-weight: bold;
 `;
@@ -32,7 +32,7 @@ const Pickleball = styled.span`
 const Club = styled.span`
   color: white;
   display: block;
-  font-size: 2rem;
+  font-size: 2rem; // Adjusted for less thick navbar on desktop
   line-height: 1.2;
   font-weight: bold;
 `;
@@ -61,6 +61,8 @@ const NavLink = styled.a`
      width: 100%;
      text-align: center;
      padding: 1rem;
+     /* Change color for mobile menu items */
+     color: #ff7f50; /* Orange color for text in mobile menu */
   }
 `;
 
@@ -98,10 +100,19 @@ const HamburgerIcon = styled.div`
   &::after {
     content: '';
     position: absolute;
+    left: 0;
     width: 24px;
     height: 2px;
     background-color: white;
     transition: all 0.3s ease-in-out;
+  }
+
+  &::before {
+    top: -7px;
+  }
+
+  &::after {
+    top: 7px;
   }
 `;
 
@@ -119,7 +130,7 @@ const LogoContainer = styled.div`
 `;
 
 const LogoImage = styled.img`
-  height: 90px;
+  height: 80px; // Adjusted for less thick navbar on desktop
   width: auto;
   margin-right: 0.5rem;
 `;
@@ -153,7 +164,9 @@ const HamburgerButton = styled.button`
   transition: transform 0.3s ease;
 
   @media (max-width: 768px) {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &:hover {

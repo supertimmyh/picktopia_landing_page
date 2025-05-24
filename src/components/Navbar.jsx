@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/PICKTOPIA.svg';
 
 const Nav = styled.nav`
@@ -37,7 +38,8 @@ const Club = styled.span`
   font-weight: bold;
 `;
 
-const NavLink = styled.a`
+const NavLink = styled(Link)` // Changed from <a> to Link for react-router
+
   color: white;
   text-decoration: none;
   font-weight: 500;
@@ -193,19 +195,22 @@ const Navbar = () => {
   return (
     <Nav>
       <NavContainer>
-        <LogoContainer>
-          <LogoImage src={logo} alt="PICKTOPIA Logo" />
-          <Logo>
-            <Pickleball>Pickleball</Pickleball>
-            <Club>Club</Club>
-          </Logo>
-        </LogoContainer>
+        <NavLink to="/">
+          <LogoContainer>
+            <LogoImage src={logo} alt="PICKTOPIA Logo" />
+            <Logo>
+              <Pickleball>Pickleball</Pickleball>
+              <Club>Club</Club>
+            </Logo>
+          </LogoContainer>
+        </NavLink>
         <HamburgerButton onClick={toggleMenu}>
           <HamburgerIcon isOpen={isOpen} />
         </HamburgerButton>
         <NavLinks isOpen={isOpen}>
-          <NavLink href="/">Home</NavLink>
-          <BookNowButton href="/signup">Join Now</BookNowButton>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/soft-opening-signup">Soft Opening</NavLink>
+          <BookNowButton to="/signup">Join Now</BookNowButton>
         </NavLinks>
       </NavContainer>
     </Nav>

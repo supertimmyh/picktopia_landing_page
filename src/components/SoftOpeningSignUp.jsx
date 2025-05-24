@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { useState } from 'react'; // Re-add useState
 
 // Colors inspired by the promotional image
 const PageBackground = '#f9a03f'; // Orange background
@@ -103,7 +104,51 @@ const SubmitButton = styled.button`
   }
 `;
 
+// New styled component for the success message
+const SuccessMessage = styled.div`
+  background-color: ${LimeGreen};
+  color: ${DarkTextOnLime};
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+  font-weight: bold;
+`;
+
 const SoftOpeningSignUp = () => {
+  // Re-add useState for name and email
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  // Add useState for success message visibility
+  const [showSuccess, setShowSuccess] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+      if (response.ok) {
+        setShowSuccess(true);
+        setName(''); // Clear name field
+        setEmail(''); // Clear email field
+        setTimeout(() => setShowSuccess(false), 5000); // Hide message after 5 seconds
+      } else {
+        // Handle errors if Formspree returns an error
+        alert('Oops! There was a problem submitting your form.');
+      }
+    } catch {
+      // Handle network errors
+      alert('Oops! There was a problem submitting your form.');
+    }
+  };
+
   return (
     <Container>
       <Header>GRAND<br/>OPENING</Header>
@@ -115,28 +160,29 @@ const SoftOpeningSignUp = () => {
         <EventInfo>FREE EVENT • REGISTER ONLINE</EventInfo>
       </EventDetails>
 
-      {/* Update form to use Formspree endpoint */}
-      <SignUpForm action="https://formspree.io/f/mnndknyb" method="POST">
+      {/* Update form to use local handleSubmit and remove _next hidden input */}
+      <SignUpForm action="https://formspree.io/f/mnndknyb" method="POST" onSubmit={handleSubmit}>
+        {/* <input type="hidden" name="_next" value="/signup-success" /> */}
         <Input 
           type="text" 
-          name="name" // Add name attribute for Formspree
+          name="name" 
           placeholder="Full Name" 
-          // Remove value and onChange as Formspree handles form data
-          // value={name} 
-          // onChange={(e) => setName(e.target.value)} 
+          value={name} // Re-add value
+          onChange={(e) => setName(e.target.value)} // Re-add onChange
           required 
         />
         <Input 
           type="email" 
-          name="email" // Add name attribute for Formspree
+          name="email" 
           placeholder="Email Address" 
-          // Remove value and onChange as Formspree handles form data
-          // value={email} 
-          // onChange={(e) => setEmail(e.target.value)} 
+          value={email} // Re-add value
+          onChange={(e) => setEmail(e.target.value)} // Re-add onChange
           required 
         />
         <SubmitButton type="submit">SIGN UP FOR FREE!</SubmitButton>
       </SignUpForm>
+      {/* Conditionally render success message */}
+      {showSuccess && <SuccessMessage>Thank you for signing up! See you at our club.</SuccessMessage>}
     </Container>
   );
 };

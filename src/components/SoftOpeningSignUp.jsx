@@ -156,7 +156,7 @@ const SoftOpeningSignUp = () => {
 
       <EventDetails>
         <EventInfo style={{fontWeight: 'bold', fontSize: '1.4rem', marginBottom: '0.5rem'}}>SOFT OPENING STARTING</EventInfo>
-        <EventDate>May 30, 2025</EventDate>
+        <EventDate>June 1, 2025</EventDate>
         <EventInfo>FREE EVENT • REGISTER ONLINE</EventInfo>
       </EventDetails>
 

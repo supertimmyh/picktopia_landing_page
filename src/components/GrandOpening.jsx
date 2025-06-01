@@ -254,7 +254,7 @@ const GrandOpening = () => {
         </Description>
 
         <OfferDetailsContainer>
-          <OfferHeader>🌞 GRAND OPENING SPECIAL — SUMMER UNLIMITED PLAY (June 1 – August 31)</OfferHeader>
+          <OfferHeader>🌞 GRAND OPENING SPECIAL — SUMMER UNLIMITED Booking (June 1 – August 31)</OfferHeader>
           <OfferText>June 1 – August 31, 2025</OfferText>
           
           <PlanContainer>
@@ -266,7 +266,7 @@ const GrandOpening = () => {
               <BenefitList>
                 <BenefitItem>4 free open play sessions per month</BenefitItem>
                 <BenefitItem>1 free non-prime time court booking per month</BenefitItem>
-                <BenefitItem>1 free prime time court bookings per month</BenefitItem>
+                <BenefitItem>1 free prime time court bookings per month</BenefitItem>s
                 <BenefitItem>10% Off All Bookings</BenefitItem>
                 <BenefitItem>10 days advanced booking</BenefitItem>
                 <BenefitItem>Unlimited court bookings</BenefitItem>

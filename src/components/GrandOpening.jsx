@@ -269,7 +269,7 @@ const GrandOpening = () => {
                 <BenefitItem>1 free prime time court bookings per month</BenefitItem>s
                 <BenefitItem>10% Off All Bookings</BenefitItem>
                 <BenefitItem>10 days advanced booking</BenefitItem>
-                <BenefitItem>Unlimited court bookings</BenefitItem>
+                <BenefitItem>Unlimited court bookings (regular fee apply)</BenefitItem>
                 <BenefitItem>10% off clinics, training, and merchandise</BenefitItem>
                 <BenefitItem>2 guest passes per month (or discount on court booking fee)</BenefitItem>
                 <BenefitItem>Priority access to Fall/Winter Full Membership (indoor season is high demand)</BenefitItem>
@@ -282,7 +282,7 @@ const GrandOpening = () => {
             </PlanCard>
             
             <PlanCard>
-              <PlanTitle>💡 Monthly Unlimited Play</PlanTitle>
+              <PlanTitle>💡 Monthly Pass</PlanTitle>
               <PlanPrice>$39</PlanPrice>
               <PlanSubtext>per month</PlanSubtext>
               
@@ -292,7 +292,7 @@ const GrandOpening = () => {
                 <BenefitItem>1 free prime time court bookings per month</BenefitItem>
                 <BenefitItem>10% Off All Bookings</BenefitItem>
                 <BenefitItem>10 days advanced booking</BenefitItem>
-                <BenefitItem>Unlimited court bookings</BenefitItem>
+                <BenefitItem>Unlimited court bookings (regular fee apply)</BenefitItem>
                 <BenefitItem>10% off clinics, training, and merchandise</BenefitItem>
                 <BenefitItem>2 guest passes per month (or discount on court booking fee)</BenefitItem>
                 <BenefitItem>Priority access to Fall/Winter Full Membership (indoor season is high demand)</BenefitItem>
@@ -320,8 +320,7 @@ const GrandOpening = () => {
             </TimeRow>
           </TimeDefinition>
           
-          <OfferHeader style={{ marginTop: '2rem' }}>Regular Season Open Play Pricing (After August 31)</OfferHeader>
-          <OfferText>After August 31</OfferText>
+          <OfferHeader style={{ marginTop: '2rem' }}>Regular Season Open Play Pricing</OfferHeader>
           
           <PricingTable>
             <PricingHeader>

@@ -69,6 +69,10 @@ const SignUpForm = styled.form`
   width: 100%;
   max-width: 400px;
   margin-bottom: 2rem;
+  
+  div {
+    width: 100%;
+  }
 `;
 
 const Input = styled.input`
@@ -76,11 +80,49 @@ const Input = styled.input`
   border-radius: 4px;
   border: 1px solid #ccc;
   font-size: 1rem;
+  background-color: #333;
+  color: white;
+  width: 100%;
+  &::placeholder {
+    color: #999;
+  }
   &:focus {
     outline: none;
     border-color: ${DarkTeal};
     box-shadow: 0 0 0 2px rgba(0, 106, 106, 0.3);
   }
+`;
+
+// Add Select styled component for dropdown fields
+const Select = styled.select`
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #333;
+  color: white;
+  width: 100%;
+  &:focus {
+    outline: none;
+    border-color: ${DarkTeal};
+    box-shadow: 0 0 0 2px rgba(0, 106, 106, 0.3);
+  }
+  option {
+    background-color: #333;
+    color: white;
+  }
+  &:invalid {
+    color: #999;
+  }
+`;
+
+const Label = styled.label`
+  display: block;
+  margin-bottom: 5px;
+  color: ${TextColor};
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
 `;
 
 const SubmitButton = styled.button`
@@ -118,6 +160,8 @@ const SoftOpeningSignUp = () => {
   // Re-add useState for name and email
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  // Add state for date selection
+  const [datePreference, setDatePreference] = useState('');
   // Add useState for success message visibility
   const [showSuccess, setShowSuccess] = useState(false);
 
@@ -138,6 +182,7 @@ const SoftOpeningSignUp = () => {
         setShowSuccess(true);
         setName(''); // Clear name field
         setEmail(''); // Clear email field
+        setDatePreference(''); // Clear date preference field
         setTimeout(() => setShowSuccess(false), 5000); // Hide message after 5 seconds
       } else {
         // Handle errors if Formspree returns an error
@@ -162,23 +207,51 @@ const SoftOpeningSignUp = () => {
 
       {/* Update form to use local handleSubmit and remove _next hidden input */}
       <SignUpForm action="https://formspree.io/f/mnndknyb" method="POST" onSubmit={handleSubmit}>
-        {/* <input type="hidden" name="_next" value="/signup-success" /> */}
-        <Input 
-          type="text" 
-          name="name" 
-          placeholder="Full Name" 
-          value={name} // Re-add value
-          onChange={(e) => setName(e.target.value)} // Re-add onChange
-          required 
-        />
-        <Input 
-          type="email" 
-          name="email" 
-          placeholder="Email Address" 
-          value={email} // Re-add value
-          onChange={(e) => setEmail(e.target.value)} // Re-add onChange
-          required 
-        />
+        <div>
+          <Label htmlFor="name">Name:</Label>
+          <Input 
+            type="text" 
+            id="name"
+            name="name" 
+            placeholder="Full Name" 
+            value={name} 
+            onChange={(e) => setName(e.target.value)} 
+            required 
+          />
+        </div>
+        
+        <div>
+          <Label htmlFor="email">Email:</Label>
+          <Input 
+            type="email" 
+            id="email"
+            name="email" 
+            placeholder="Email Address" 
+            value={email} 
+            onChange={(e) => setEmail(e.target.value)} 
+            required 
+          />
+        </div>
+        
+        <div>
+          <Label htmlFor="datePreference">Select date to visit:</Label>
+          <Select
+            id="datePreference"
+            name="datePreference"
+            value={datePreference}
+            onChange={(e) => setDatePreference(e.target.value)}
+            required
+          >
+            <option value="" disabled>Select a day</option>
+            <option value="Sunday, June 1">Sunday, June 1</option>
+            <option value="Monday, June 2">Monday, June 2</option>
+            <option value="Tuesday, June 3">Tuesday, June 3</option>
+            <option value="Wednesday, June 4">Wednesday, June 4</option>
+            <option value="Thursday, June 5">Thursday, June 5</option>
+            <option value="Friday, June 6">Friday, June 6</option>
+            <option value="Saturday, June 7">Saturday, June 7</option>
+          </Select>
+        </div>
         <SubmitButton type="submit">SIGN UP FOR FREE!</SubmitButton>
       </SignUpForm>
       {/* Conditionally render success message */}

@@ -151,12 +151,12 @@ const SoftOpeningSignUp = () => {
 
   return (
     <Container>
-      <Header>GRAND<br/>OPENING</Header>
+      <Header>SOFT<br/>OPENING</Header>
       <SubHeader>PICKTOPIA PICKLEBALL CLUB</SubHeader>
 
       <EventDetails>
-        <EventInfo style={{fontWeight: 'bold', fontSize: '1.4rem', marginBottom: '0.5rem'}}>SOFT OPENING STARTING</EventInfo>
-        <EventDate>June 1, 2025</EventDate>
+        <EventInfo style={{fontWeight: 'bold', fontSize: '1.4rem', marginBottom: '0.5rem'}}>SOFT OPENING WEEK</EventInfo>
+        <EventDate>June 1, 2025 - June 7, 2025</EventDate>
         <EventInfo>FREE EVENT • REGISTER ONLINE</EventInfo>
       </EventDetails>
 

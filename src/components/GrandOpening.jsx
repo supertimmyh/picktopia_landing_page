@@ -245,52 +245,16 @@ const ButtonContainer = styled.div`
 
 const GrandOpening = () => {
   return (
-    <GrandOpeningSection id="grand-opening">
+    <GrandOpeningSection>
       <Container>
-        <Header>🎉 Grand Opening Celebration! 🎉</Header>
+        <Header>🎉 Picktopia St Clair — Summer 2025 Launch 🎉</Header>
         <Description>
-          Join us for the grand opening of <HighlightText>Picktopia Pickleball Club</HighlightText>! 
-          Experience state-of-the-art courts, meet fellow pickleball enthusiasts, and enjoy exclusive opening day offers.
+          Get ready for an incredible summer of pickleball at our brand new St Clair location! 
+          Join us from June 1 to August 31, 2025 with our special launch pricing.
         </Description>
 
         <OfferDetailsContainer>
-          <OfferHeader>Special Grand Opening Offers!</OfferHeader>
-          <OfferText>
-            To celebrate our launch, we're offering incredible deals on our memberships. 
-            Don't miss out on these limited-time prices!
-          </OfferText>
-
-          <PlanContainer>
-            <PlanCard>
-              <div>
-                <PlanTitle>Full Summer Pass</PlanTitle>
-                <PlanPrice>$199</PlanPrice>
-                <PlanSubtext>One-time payment for unlimited play until August 31st</PlanSubtext>
-                <BenefitList>
-                  <BenefitItem>Unlimited court access all summer</BenefitItem>
-                  <BenefitItem>Priority booking for events</BenefitItem>
-                  <BenefitItem>10% off pro shop purchases</BenefitItem>
-                </BenefitList>
-              </div>
-              <CTAButton href="https://app.gocourtplus.com/picktopia/login" target="_blank" rel="noopener noreferrer">Sign Up Now</CTAButton>
-            </PlanCard>
-
-            <PlanCard featured>
-              <div>
-                <PlanTitle>Monthly Unlimited Play</PlanTitle>
-                <PlanPrice>$79/month</PlanPrice>
-                <PlanSubtext>Flexible monthly membership</PlanSubtext>
-                <BenefitList>
-                  <BenefitItem>Unlimited court access</BenefitItem>
-                  <BenefitItem>Access to member-only clinics</BenefitItem>
-                  <BenefitItem>Guest passes (2 per month)</BenefitItem>
-                </BenefitList>
-              </div>
-              <CTAButton href="https://app.gocourtplus.com/picktopia/login" target="_blank" rel="noopener noreferrer">Join Today</CTAButton>
-            </PlanCard>
-          </PlanContainer>
-
-          <OfferHeader style={{ marginTop: '2.5rem' }}>Drop-In Rates & Court Rentals</OfferHeader>
+          <OfferHeader>🌞 GRAND OPENING SPECIAL — SUMMER UNLIMITED PLAY (June 1 – August 31)</OfferHeader>
           <OfferText>June 1 – August 31, 2025</OfferText>
           
           <PlanContainer>
@@ -313,7 +277,7 @@ const GrandOpening = () => {
               
               <OfferText><strong>🔥 Best value</strong> — equivalent to just $33/month for full indoor access all summer!</OfferText>
               <ButtonContainer>
-                <CTAButton href="#claim-offer">GET FULL SUMMER PASS</CTAButton>
+              <CTAButton href="https://app.gocourtplus.com/picktopia/login" target="_blank" rel="noopener noreferrer">GET FULL SUMMER PASS</CTAButton>
               </ButtonContainer>
             </PlanCard>
             
@@ -337,7 +301,7 @@ const GrandOpening = () => {
               <OfferText>Option to upgrade to Full Summer Pass for $70</OfferText>
               <OfferText>Must upgrade within two week of plan start to gain all Full Summer Pass benefits retroactively</OfferText>
               <ButtonContainer>
-                <CTAButton href="#claim-offer">GET MONTHLY PASS</CTAButton>
+              <CTAButton href="https://app.gocourtplus.com/picktopia/login" target="_blank" rel="noopener noreferrer">GET MONTHLY PASS</CTAButton>
               </ButtonContainer>
             </PlanCard>
           </PlanContainer>

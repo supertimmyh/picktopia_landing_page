@@ -9,6 +9,7 @@ import HeroSection from './components/HeroSection'; // Changed to HeroSection
 // import PromotionalOffer from './components/PromotionalOffer'
 import GrandOpening from './components/GrandOpening'; // Import the new component
 import SoftOpeningSignUp from './components/SoftOpeningSignUp'; // Import the soft opening signup page
+import WaiverForm from './components/WaiverForm'; // Import the waiver form component
 import Footer from './components/Footer'
 import SignUp from './components/SignUp'
 import SignUpSuccess from './components/SignUpSuccess'
@@ -39,6 +40,7 @@ function App() {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/signup/success" element={<SignUpSuccess />} />
           <Route path="/soft-opening-signup" element={<SoftOpeningSignUp />} />
+          <Route path="/waiver" element={<WaiverForm />} />
         </Routes>
         <Footer />
       </AppWrapper>

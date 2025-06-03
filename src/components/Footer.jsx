@@ -93,7 +93,7 @@ const Footer = () => {
         <Column>
           <Title>Contact Us</Title>
           <ContactInfo>
-            <ContactLink href="mailto:info@picktopia.com">info@picktopia.com</ContactLink>
+            <ContactLink href="mailto:info@picktopia.com">info@rallypicktopia.com</ContactLink>
             <ContactLink href="tel:+1234567890">(647) 478-9866</ContactLink>
             <div>3595 St Clair Ave E. Unit B2</div>
             <div>Toronto, ON M1K 1L8</div>

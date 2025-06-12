@@ -245,125 +245,23 @@ const ButtonContainer = styled.div`
 
 const GrandOpening = () => {
   return (
-    <GrandOpeningSection>
+    <GrandOpeningSection id="membership">
       <Container>
-        <Header>🎉 Picktopia St Clair — Summer 2025 Launch 🎉</Header>
+        <Header>🎉 Welcome to Picktopia St Clair! 🎉</Header>
         <Description>
-          Get ready for an incredible summer of pickleball at our brand new St Clair location! 
-          Join us from June 1 to August 31, 2025 with our special launch pricing.
+          Our brand new St Clair location is now open! We offer a variety of membership options to suit your playing style.
         </Description>
 
         <OfferDetailsContainer>
-          <OfferHeader>🌞 GRAND OPENING SPECIAL — SUMMER UNLIMITED Booking (June 1 – August 31)</OfferHeader>
-          <OfferText>June 1 – August 31, 2025</OfferText>
-          
-          <PlanContainer>
-            <PlanCard featured={true}>
-              <PlanTitle featured={true}>🥇 Full Summer Pass</PlanTitle>
-              <PlanPrice>$99</PlanPrice>
-              <PlanSubtext>one-time for 3 months</PlanSubtext>
-              
-              <BenefitList>
-                <BenefitItem>4 free open play sessions per month</BenefitItem>
-                <BenefitItem>1 free non-prime time court booking per month</BenefitItem>
-                <BenefitItem>1 free prime time court bookings per month</BenefitItem>s
-                <BenefitItem>10% Off All Bookings</BenefitItem>
-                <BenefitItem>10 days advanced booking</BenefitItem>
-                <BenefitItem>Unlimited court bookings (regular fee apply)</BenefitItem>
-                <BenefitItem>10% off clinics, training, and merchandise</BenefitItem>
-                <BenefitItem>2 guest passes per month (or discount on court booking fee)</BenefitItem>
-                <BenefitItem>Priority access to Fall/Winter Full Membership (indoor season is high demand)</BenefitItem>
-              </BenefitList>
-              
-              <OfferText><strong>🔥 Best value</strong> — equivalent to just $33/month for full indoor access all summer!</OfferText>
-              <ButtonContainer>
-              <CTAButton href="https://app.gocourtplus.com/picktopia/login" target="_blank" rel="noopener noreferrer">GET FULL SUMMER PASS</CTAButton>
-              </ButtonContainer>
-            </PlanCard>
-            
-            <PlanCard>
-              <PlanTitle>💡 Monthly Pass</PlanTitle>
-              <PlanPrice>$39</PlanPrice>
-              <PlanSubtext>per month</PlanSubtext>
-              
-              <BenefitList>
-                <BenefitItem>4 free open play sessions per month</BenefitItem>
-                <BenefitItem>1 free non-prime time court booking per month</BenefitItem>
-                <BenefitItem>1 free prime time court bookings per month</BenefitItem>
-                <BenefitItem>10% Off All Bookings</BenefitItem>
-                <BenefitItem>10 days advanced booking</BenefitItem>
-                <BenefitItem>Unlimited court bookings (regular fee apply)</BenefitItem>
-                <BenefitItem>10% off clinics, training, and merchandise</BenefitItem>
-                <BenefitItem>2 guest passes per month (or discount on court booking fee)</BenefitItem>
-                <BenefitItem>Priority access to Fall/Winter Full Membership (indoor season is high demand)</BenefitItem>
-              </BenefitList>
-
-              <OfferText>Option to upgrade to Full Summer Pass for $70</OfferText>
-              <OfferText>Must upgrade within two week of plan start to gain all Full Summer Pass benefits retroactively</OfferText>
-              <ButtonContainer>
-              <CTAButton href="https://app.gocourtplus.com/picktopia/login" target="_blank" rel="noopener noreferrer">GET MONTHLY PASS</CTAButton>
-              </ButtonContainer>
-            </PlanCard>
-          </PlanContainer>
-          
-          <TimeDefinition>
-            <TimeTitle>⏰ Prime vs. Non-Prime Time</TimeTitle>
-            
-            <TimeRow>
-              <TimeLabel>Prime Time:</TimeLabel>
-              <TimeValue>Monday, Tuesday, Wednesday, Thursday: 5 PM – 10 PM<br />Friday: 5 PM - 11 PM<br />Weekend</TimeValue>
-            </TimeRow>
-            
-            <TimeRow>
-              <TimeLabel>Non-Prime Time:</TimeLabel>
-              <TimeValue>Monday, Tuesday, Wednesday, Thursday, Friday: 9 AM – 4 PM</TimeValue>
-            </TimeRow>
-          </TimeDefinition>
-          
-          <OfferHeader style={{ marginTop: '2rem' }}>Regular Season Open Play Pricing</OfferHeader>
-          
-          <PricingTable>
-            <PricingHeader>
-              <PricingCell isHeader>Time Slot</PricingCell>
-              <PricingCell isHeader>Open Play Price (per player)</PricingCell>
-            </PricingHeader>
-            
-            <PricingRow>
-              <PricingCell>Non-Prime</PricingCell>
-              <PricingCell><PriceHighlight>$7</PriceHighlight></PricingCell>
-            </PricingRow>
-            
-            <PricingRow>
-              <PricingCell>Prime</PricingCell>
-              <PricingCell><PriceHighlight>$10</PriceHighlight></PricingCell>
-            </PricingRow>
-          </PricingTable>
-          
-          <OfferText style={{ marginTop: '1rem' }}>💡 These rates apply to all players without a pass.</OfferText>
-          
-          <OfferHeader style={{ marginTop: '2rem' }}>Court Booking Rates (Standard Model, Non-Pass Holders)</OfferHeader>
-          
-          <PricingTable>
-            <PricingHeader>
-              <PricingCell isHeader>Court Type</PricingCell>
-              <PricingCell isHeader>Non-Prime</PricingCell>
-              <PricingCell isHeader>Prime</PricingCell>
-            </PricingHeader>
-            
-            <PricingRow>
-              <PricingCell>Standard Courts</PricingCell>
-              <PricingCell><PriceHighlight>$30/hr</PriceHighlight></PricingCell>
-              <PricingCell><PriceHighlight>$35/hr</PriceHighlight></PricingCell>
-            </PricingRow>
-            
-            <PricingRow>
-              <PricingCell>Championship Courts</PricingCell>
-              <PricingCell><PriceHighlight>$35/hr</PriceHighlight></PricingCell>
-              <PricingCell><PriceHighlight>$40/hr</PriceHighlight></PricingCell>
-            </PricingRow>
-          </PricingTable>
-          
-          <OfferText style={{ marginTop: '1rem' }}>🧑‍🤝‍🧑 Booking fees are typically split among players unless covered by a pass or membership.</OfferText>
+          <OfferHeader>Membership Information</OfferHeader>
+          <OfferText>
+            Full membership details will be published soon. 
+            In the meantime, please call us for more information on our membership plans and benefits.
+          </OfferText>
+          <OfferText>
+            Contact us at: <a href="tel:+16474789866">6474789866</a>
+          </OfferText>
+          <CTAButton href="https://app.gocourtplus.com/picktopia/login" target="_blank" rel="noopener noreferrer">Book a Court</CTAButton>
         </OfferDetailsContainer>
       </Container>
     </GrandOpeningSection>

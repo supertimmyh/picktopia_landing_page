@@ -209,7 +209,7 @@ const Navbar = () => {
         </HamburgerButton>
         <NavLinks isOpen={isOpen}>
           <NavLink to="/">Home</NavLink>
-          <NavLink to="/soft-opening-signup">Soft Opening</NavLink>
+          <NavLink to="/#membership">Membership</NavLink>
           <BookNowButton to="https://app.gocourtplus.com/picktopia/login">Join Now</BookNowButton>
         </NavLinks>
       </NavContainer>

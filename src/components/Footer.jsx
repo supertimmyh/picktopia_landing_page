@@ -83,18 +83,17 @@ const Footer = () => {
         <Column>
           <Title>Connect With Us</Title>
           <SocialLinks>
-            <SocialIcon href="#" aria-label="Facebook">📱</SocialIcon>
-            <SocialIcon href="#" aria-label="Twitter">📨</SocialIcon>
-            <SocialIcon href="#" aria-label="Instagram">📸</SocialIcon>
-            <SocialIcon href="#" aria-label="LinkedIn">💼</SocialIcon>
+          <SocialIcon href="https://www.facebook.com/share/1AitgTBCBJ/?mibextid=wwXIfr" aria-label="Facebook">📱</SocialIcon>
+          <SocialIcon href="https://www.instagram.com/rally.picktopia" aria-label="Instagram">📸</SocialIcon>
+          <SocialIcon href="#" aria-label="LinkedIn">💼</SocialIcon>
           </SocialLinks>
         </Column>
         
         <Column>
           <Title>Contact Us</Title>
           <ContactInfo>
-            <ContactLink href="mailto:info@picktopia.com">info@rallypicktopia.com</ContactLink>
-            <ContactLink href="tel:+1234567890">(647) 478-9866</ContactLink>
+            <ContactLink href="mailto:info@rallypicktopia.com">info@rallypicktopia.com</ContactLink>
+            <ContactLink href="tel:+16474789866">(647) 478-9866</ContactLink>
             <div>3595 St Clair Ave E. Unit B2</div>
             <div>Toronto, ON M1K 1L8</div>
           </ContactInfo>

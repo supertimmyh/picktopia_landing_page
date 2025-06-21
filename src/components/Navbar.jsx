@@ -38,8 +38,7 @@ const Club = styled.span`
   font-weight: bold;
 `;
 
-const NavLink = styled(Link)` // Changed from <a> to Link for react-router
-
+const NavLink = styled(Link)`
   color: white;
   text-decoration: none;
   font-weight: 500;
@@ -48,6 +47,7 @@ const NavLink = styled(Link)` // Changed from <a> to Link for react-router
   border-radius: 4px;
   position: relative;
   outline: none;
+  cursor: pointer;
 
   &:hover, &:focus {
     color: #fff;
@@ -69,11 +69,13 @@ const NavLink = styled(Link)` // Changed from <a> to Link for react-router
 `;
 
 
-const BookNowButton = styled(NavLink)`
+const BookNowButton = styled(Link)`
   background-color: white;
   color: #ff7f50;
   padding: 0.5rem 1.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  font-weight: 500;
 
   &:hover, &:focus {
     background-color: #fff8f6;
@@ -192,10 +194,24 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleNavClick = (hash) => {
+    setIsOpen(false);
+
+    // Use a timeout to allow navigation to occur on other pages before scrolling
+    setTimeout(() => {
+      const element = document.getElementById(hash);
+      if (hash && element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }, 100);
+  };
+
   return (
     <Nav>
       <NavContainer>
-        <NavLink to="/">
+        <NavLink to="/" onClick={() => handleNavClick()}>
           <LogoContainer>
             <LogoImage src={logo} alt="PICKTOPIA Logo" />
             <Logo>
@@ -208,9 +224,10 @@ const Navbar = () => {
           <HamburgerIcon isOpen={isOpen} />
         </HamburgerButton>
         <NavLinks isOpen={isOpen}>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/#membership">Membership</NavLink>
-          <BookNowButton to="https://app.gocourtplus.com/picktopia/login">Join Now</BookNowButton>
+          <NavLink to="/" onClick={() => handleNavClick()}>Home</NavLink>
+          <NavLink to="/#club-info" onClick={() => handleNavClick('club-info')}>Club Info</NavLink>
+          <NavLink to="/#membership" onClick={() => handleNavClick('membership')}>Membership</NavLink>
+          <BookNowButton to="https://app.gocourtplus.com/picktopia/login" onClick={() => setIsOpen(false)}>Join Now</BookNowButton>
         </NavLinks>
       </NavContainer>
     </Nav>

@@ -227,7 +227,7 @@ const Navbar = () => {
           <NavLink to="/" onClick={() => handleNavClick()}>Home</NavLink>
           <NavLink to="/#club-info" onClick={() => handleNavClick('club-info')}>Club Info</NavLink>
           <NavLink to="/#membership" onClick={() => handleNavClick('membership')}>Membership</NavLink>
-          <BookNowButton to="https://app.gocourtplus.com/picktopia/login" onClick={() => setIsOpen(false)}>Join Now</BookNowButton>
+          <BookNowButton to="https://app.gocourtplus.com/picktopia/login" onClick={() => setIsOpen(false)}>Book Now</BookNowButton>
         </NavLinks>
       </NavContainer>
     </Nav>

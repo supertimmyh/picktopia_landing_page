@@ -40,7 +40,7 @@ const EventRegistration = () => {
     <PageContainer>
       <Title>Canada Day Pickleball Intro!</Title>
       <Description>
-        Celebrate Canada Day with us! Sign up for a 2-hour coach-guided introductory pickleball play session just for $5. All equipment will be provided.
+        Celebrate Canada Day with us! Sign up for a 2-hour coach-guided introductory pickleball play session just for $8. All equipment will be provided.
         <br />
         <strong>Please note: slots are limited. You will be notified by email to confirm your spot.</strong>
       </Description>

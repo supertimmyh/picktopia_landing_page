@@ -8,6 +8,7 @@ import WaiverForm from './components/WaiverForm';
 import Footer from './components/Footer'
 import SignUp from './components/SignUp'
 import SignUpSuccess from './components/SignUpSuccess'
+import EventRegistration from './components/EventRegistration';
 import './App.css'
 
 const AppWrapper = styled.div`
@@ -31,6 +32,11 @@ function App() {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/signup/success" element={<SignUpSuccess />} />
           <Route path="/waiver" element={<WaiverForm />} />
+          {/* Update the route to use the EventRegistration component */}
+          <Route 
+            path="/canada-day-event" 
+            element={<EventRegistration />} 
+          />
         </Routes>
         <Footer />
       </AppWrapper>

@@ -222,10 +222,11 @@ const Membership = () => {
             <div>
               <PlanTitle>Daytime Membership</PlanTitle>
               <PlanSubtext>Ideal for individuals who enjoys social plays during weekday daytime hours.</PlanSubtext>
-              <PlanPrice>Monthly <span style={{fontSize: '1.2rem', fontWeight: 'normal'}}>membership due</span></PlanPrice>
+              <PlanPrice>$69 <span style={{fontSize: '1.2rem', fontWeight: 'normal'}}>+ tax / month</span></PlanPrice>
               <BenefitList>
                 <BenefitItem>FREE Unlimited open-play sessions during Monday-Friday non-prime hours - No extra cost!</BenefitItem>
                 <BenefitItem>Reserve up to 10 days in advance</BenefitItem>
+                <BenefitItem>Monthly membership no long-term commitment</BenefitItem>
                 <BenefitItem>15% discount for hosting any event</BenefitItem>
               </BenefitList>
             </div>

@@ -201,17 +201,16 @@ const Membership = () => {
           {/* Founding Membership Card */}
           <PlanCard featured>
             <div>
-              <PlanTitle featured>Founding Membership</PlanTitle>
+              <PlanTitle featured>All-Access Membership</PlanTitle>
               <PlanSubtext>Limited to the first 50 members!</PlanSubtext>
               <PlanPrice>$89 <span style={{fontSize: '1.2rem', fontWeight: 'normal'}}>+ tax / month</span></PlanPrice>
               <BenefitList>
-                <BenefitItem><strong>First TWO billing cycles FREE!</strong></BenefitItem>
                 <BenefitItem>No court rental fees (Fair Use Policy applies)</BenefitItem>
                 <BenefitItem>Unlimited drop-in sessions</BenefitItem>
-                <BenefitItem>14-day advanced booking privileges</BenefitItem>
                 <BenefitItem>Priority access & discounted pricing on lessons/clinics</BenefitItem>
                 <BenefitItem>10% off merchandise</BenefitItem>
                 <BenefitItem>Two (2) free guest passes per month</BenefitItem>
+                <BenefitItem>14-day advanced booking privileges</BenefitItem>
                 <BenefitItem>15% discount for hosting any event</BenefitItem>
               </BenefitList>
             </div>
@@ -222,16 +221,12 @@ const Membership = () => {
           <PlanCard>
             <div>
               <PlanTitle>Daytime Membership</PlanTitle>
-              <PlanSubtext>Ideal for weekday play.</PlanSubtext>
-              <PlanPrice>$60 <span style={{fontSize: '1.2rem', fontWeight: 'normal'}}>+ tax / month</span></PlanPrice>
+              <PlanSubtext>Ideal for individuals who enjoys social plays during weekday daytime hours.</PlanSubtext>
+              <PlanPrice>Monthly <span style={{fontSize: '1.2rem', fontWeight: 'normal'}}>membership due</span></PlanPrice>
               <BenefitList>
-                <BenefitItem>Unlimited drop-in sessions (Mon-Fri, 9 AM-4 PM)</BenefitItem>
-                <BenefitItem>10-day advanced court booking</BenefitItem>
-                <BenefitItem>15% discount on court bookings</BenefitItem>
-                <BenefitItem>Priority access & discounted rates for lessons/clinics</BenefitItem>
-                <BenefitItem>10% off all merchandise</BenefitItem>
-                <BenefitItem>One free guest pass per month</BenefitItem>
-                <BenefitItem>15% discount on hosting events</BenefitItem>
+                <BenefitItem>FREE Unlimited open-play sessions during Monday-Friday non-prime hours - No extra cost!</BenefitItem>
+                <BenefitItem>Reserve up to 10 days in advance</BenefitItem>
+                <BenefitItem>15% discount for hosting any event</BenefitItem>
               </BenefitList>
             </div>
             <CTAButton href="https://app.gocourtplus.com/picktopia/login" target="_blank" rel="noopener noreferrer">Sign Up Now</CTAButton>

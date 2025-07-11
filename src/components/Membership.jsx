@@ -214,7 +214,7 @@ const Membership = () => {
                 <BenefitItem>15% discount for hosting any event</BenefitItem>
               </BenefitList>
             </div>
-            <CTAButton href="https://app.gocourtplus.com/picktopia/login" target="_blank" rel="noopener noreferrer">Sign Up Now</CTAButton>
+            <CTAButton href="https://app.courtreserve.com/Portal/Picktopia" target="_blank" rel="noopener noreferrer">Sign Up Now</CTAButton>
           </PlanCard>
 
           {/* Daytime Membership Card */}
@@ -230,7 +230,7 @@ const Membership = () => {
                 <BenefitItem>15% discount for hosting any event</BenefitItem>
               </BenefitList>
             </div>
-            <CTAButton href="https://app.gocourtplus.com/picktopia/login" target="_blank" rel="noopener noreferrer">Sign Up Now</CTAButton>
+            <CTAButton href="https://app.courtreserve.com/Portal/Picktopia" target="_blank" rel="noopener noreferrer">Sign Up Now</CTAButton>
           </PlanCard>
 
           {/* Punch Pass Card */}

@@ -261,7 +261,7 @@ const GrandOpening = () => {
           <OfferText>
             Contact us at: <a href="tel:+16474789866">6474789866</a>
           </OfferText>
-          <CTAButton href="https://app.gocourtplus.com/picktopia/login" target="_blank" rel="noopener noreferrer">Book a Court</CTAButton>
+          <CTAButton href="https://app.courtreserve.com/Portal/Picktopia" target="_blank" rel="noopener noreferrer">Book a Court</CTAButton>
         </OfferDetailsContainer>
       </Container>
     </GrandOpeningSection>

@@ -205,8 +205,9 @@ const Membership = () => {
               <PlanSubtext>Limited to the first 50 members!</PlanSubtext>
               <PlanPrice>$89 <span style={{fontSize: '1.2rem', fontWeight: 'normal'}}>+ tax / month</span></PlanPrice>
               <BenefitList>
-                <BenefitItem>No court rental fees (Fair Use Policy applies)</BenefitItem>
-                <BenefitItem>Unlimited drop-in sessions</BenefitItem>
+                <BenefitItem>Four (4) free court rental (Fair Use Policy applies)</BenefitItem>
+                <BenefitItem>Unlimited open-play sessions</BenefitItem>
+                <BenefitItem>One (1) free month with twelve (12) month commitment</BenefitItem>
                 <BenefitItem>Priority access & discounted pricing on lessons/clinics</BenefitItem>
                 <BenefitItem>10% off merchandise</BenefitItem>
                 <BenefitItem>Two (2) free guest passes per month</BenefitItem>

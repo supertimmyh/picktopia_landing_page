@@ -143,7 +143,7 @@ const HeroSection = () => {
       <TextWrapper>
         <ClubName>PICKTOPIA PICKLEBALL CLUB</ClubName>
         <MainHeadline>PICKLEBALL FUN FOR EVERYONE - JOIN THE RALLY</MainHeadline>
-        <SubHeadline to="https://app.courtreserve.com/Portal/Picktopia">Book a Court</SubHeadline>
+        <SubHeadline to="https://app.courtreserve.com/Online/Portal/CreateAccountAndRequestAccessToOrg/16040">Book Your Spot</SubHeadline>
       </TextWrapper>
     </HeroContainer>
   );

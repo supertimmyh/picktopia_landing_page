@@ -207,7 +207,7 @@ const Membership = () => {
               <BenefitList>
                 <BenefitItem>Four (4) free court rental (Fair Use Policy applies)</BenefitItem>
                 <BenefitItem>Unlimited open-play sessions</BenefitItem>
-                <BenefitItem>One (1) free month with twelve (12) month commitment</BenefitItem>
+                <BenefitItem>Free until August 31, 2025 with 12 month commitment.</BenefitItem>
                 <BenefitItem>Priority access & discounted pricing on lessons/clinics</BenefitItem>
                 <BenefitItem>10% off merchandise</BenefitItem>
                 <BenefitItem>Two (2) free guest passes per month</BenefitItem>

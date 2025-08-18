@@ -237,7 +237,7 @@ const Membership = () => {
           <PlanCard>
             <div>
               <PlanTitle>Drop-in Punch Pass</PlanTitle>
-              <PlanSubtext>Perfect for flexible, casual play. Passes include 12 sessions and can be purchased at the front desk.</PlanSubtext>
+              <PlanSubtext>Perfect for flexible, casual play. Passes include 10 sessions plus 1 free session (total 11 sessions).</PlanSubtext>
               <div style={{marginTop: '2rem'}}>
                 <PunchPassContainer>
                   <PunchPassTitle>☀️ Daytime Pass</PunchPassTitle>

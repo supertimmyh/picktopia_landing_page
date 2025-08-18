@@ -160,13 +160,13 @@ const ClubInfo = () => {
 
         <PricingContainer>
           <PricingCard borderColor={primeColor}>
-            <CardTitle>Open Play (Drop-in)</CardTitle>
+            <CardTitle>Open Play </CardTitle>
             <PriceTier>
-              <PriceLabel color={primeColor}>Prime Time</PriceLabel>
+              <PriceLabel color={primeColor}>Prime Time Session</PriceLabel>
               <Price>$10 <small>+ HST / person</small></Price>
             </PriceTier>
             <PriceTier>
-              <PriceLabel color={nonPrimeColor}>Non-Prime Time</PriceLabel>
+              <PriceLabel color={nonPrimeColor}>Non-Prime Time Session</PriceLabel>
               <Price>$7 <small>+ HST / person</small></Price>
             </PriceTier>
           </PricingCard>

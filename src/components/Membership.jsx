@@ -202,12 +202,12 @@ const Membership = () => {
           <PlanCard featured>
             <div>
               <PlanTitle featured>All-Access Membership</PlanTitle>
-              <PlanSubtext>Limited to the first 50 members!</PlanSubtext>
-              <PlanPrice>$89 <span style={{fontSize: '1.2rem', fontWeight: 'normal'}}>+ tax / month</span></PlanPrice>
+              <PlanSubtext>Perfect for dedicated players who want unlimited access and premium benefits.</PlanSubtext>
+              <PlanPrice><span style={{textDecoration: 'line-through', color: '#999', fontSize: '1.8rem', marginRight: '0.5rem'}}>$139</span>$109 <span style={{fontSize: '1.2rem', fontWeight: 'normal'}}>+ tax / month</span></PlanPrice>
               <BenefitList>
                 <BenefitItem>Four (4) free court rental (Fair Use Policy applies)</BenefitItem>
                 <BenefitItem>Unlimited open-play sessions</BenefitItem>
-                <BenefitItem>Free until August 31, 2025 with 12 month commitment.</BenefitItem>
+                <BenefitItem>12 month commitment.</BenefitItem>
                 <BenefitItem>Priority access & discounted pricing on lessons/clinics</BenefitItem>
                 <BenefitItem>10% off merchandise</BenefitItem>
                 <BenefitItem>Two (2) free guest passes per month</BenefitItem>
@@ -222,12 +222,12 @@ const Membership = () => {
           <PlanCard>
             <div>
               <PlanTitle>Daytime Membership</PlanTitle>
-              <PlanSubtext>Ideal for individuals who enjoys social plays during weekday daytime hours.</PlanSubtext>
+              <PlanSubtext>Ideal for individuals who enjoys social plays during weekday daytime hours. 12 month commitment.</PlanSubtext>
               <PlanPrice>$69 <span style={{fontSize: '1.2rem', fontWeight: 'normal'}}>+ tax / month</span></PlanPrice>
               <BenefitList>
                 <BenefitItem>FREE Unlimited open-play sessions during Monday-Friday non-prime hours - No extra cost!</BenefitItem>
                 <BenefitItem>Reserve up to 10 days in advance</BenefitItem>
-                <BenefitItem>Monthly membership no long-term commitment</BenefitItem>
+                <BenefitItem>12 month commitment</BenefitItem>
                 <BenefitItem>15% discount for hosting any event</BenefitItem>
               </BenefitList>
             </div>
@@ -238,18 +238,18 @@ const Membership = () => {
           <PlanCard>
             <div>
               <PlanTitle>Drop-in Punch Pass</PlanTitle>
-              <PlanSubtext>Perfect for flexible, casual play. Passes include 10 sessions plus 1 free session (total 11 sessions).</PlanSubtext>
+              <PlanSubtext>Perfect for flexible, casual play. Passes include 10 sessions. One punch card per person.</PlanSubtext>
               <div style={{marginTop: '2rem'}}>
                 <PunchPassContainer>
-                  <PunchPassTitle>☀️ Daytime Pass</PunchPassTitle>
-                  <PlanPrice>$75 <span style={{fontSize: '1.2rem', fontWeight: 'normal'}}>+ HST</span></PlanPrice>
+                  <PunchPassTitle>☀️ Off-Peak Punch Card</PunchPassTitle>
+                  <PlanPrice>$85 <span style={{fontSize: '1.2rem', fontWeight: 'normal'}}>+ HST</span></PlanPrice>
                   <BenefitList>
                     <BenefitItem>Flexible access during designated daytime drop-in hours.</BenefitItem>
                   </BenefitList>
                 </PunchPassContainer>
                 <PunchPassContainer>
-                  <PunchPassTitle>🌙 Anytime Pass</PunchPassTitle>
-                  <PlanPrice>$100 <span style={{fontSize: '1.2rem', fontWeight: 'normal'}}>+ HST</span></PlanPrice>
+                  <PunchPassTitle>🌙 Anytime Punch Card</PunchPassTitle>
+                  <PlanPrice>$120 <span style={{fontSize: '1.2rem', fontWeight: 'normal'}}>+ HST</span></PlanPrice>
                   <BenefitList>
                     <BenefitItem>Access drop-in sessions any time, day or evening.</BenefitItem>
                   </BenefitList>

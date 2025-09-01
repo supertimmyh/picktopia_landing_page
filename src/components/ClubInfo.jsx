@@ -163,11 +163,11 @@ const ClubInfo = () => {
             <CardTitle>Open Play </CardTitle>
             <PriceTier>
               <PriceLabel color={primeColor}>Prime Time Session</PriceLabel>
-              <Price>$10 <small>+ HST / person</small></Price>
+              <Price>$14 <small>+ HST / person</small></Price>
             </PriceTier>
             <PriceTier>
               <PriceLabel color={nonPrimeColor}>Non-Prime Time Session</PriceLabel>
-              <Price>$7 <small>+ HST / person</small></Price>
+              <Price>$10 <small>+ HST / person</small></Price>
             </PriceTier>
           </PricingCard>
 
@@ -177,22 +177,22 @@ const ClubInfo = () => {
                 <CourtTypeTitle color={nonPrimeColor}>Championship Court</CourtTypeTitle>
                  <PriceTier>
                     <PriceLabel color={primeColor}>Prime Time</PriceLabel>
-                    <Price>$40 <small>+ HST / hour</small></Price>
+                    <Price>$45 <small>+ HST / hour</small></Price>
                 </PriceTier>
                 <PriceTier>
                     <PriceLabel color={nonPrimeColor}>Non-Prime Time</PriceLabel>
-                    <Price>$35 <small>+ HST / hour</small></Price>
+                    <Price>$40 <small>+ HST / hour</small></Price>
                 </PriceTier>
             </CourtTypeContainer>
             <CourtTypeContainer>
                 <CourtTypeTitle color={nonPrimeColor}>Standard Court</CourtTypeTitle>
                 <PriceTier>
                     <PriceLabel color={primeColor}>Prime Time</PriceLabel>
-                    <Price>$35 <small>+ HST / hour</small></Price>
+                    <Price>$40 <small>+ HST / hour</small></Price>
                 </PriceTier>
                 <PriceTier>
                     <PriceLabel color={nonPrimeColor}>Non-Prime Time</PriceLabel>
-                    <Price>$30 <small>+ HST / hour</small></Price>
+                    <Price>$35 <small>+ HST / hour</small></Price>
                 </PriceTier>
             </CourtTypeContainer>
           </PricingCard>
